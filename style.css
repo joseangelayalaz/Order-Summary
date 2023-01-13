@@ -1,0 +1,108 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Verypale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+body {
+    position: absolute;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+.main {
+    height: 100%;
+    display: grid;
+    place-items: center; 
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    text-align: center;
+}
+
+.form {
+   width: 300px;
+   background-color: white;
+   margin: 5%;
+   border-radius: 10px;
+}
+.img-summary {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.plans-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-template-rows: 50px;
+    gap: 10px;
+    place-items: center;
+    background-color: var(--Verypale-blue);
+    margin: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.plans {
+    text-align: start;
+}
+.plans h4 {
+    margin: 0;
+}
+.plans p {
+    margin: 0;
+}
+.plans-container a {
+    text-align: right;
+    text-decoration-color: var(--Bright-blue) ;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.section-two p {
+    color: var(--Desaturated-blue);
+}
+
+.button button{
+    background-color: var(--Bright-blue);
+    color: var(--Verypale-blue);
+    width: 90%;
+    border: none;
+    height: 35px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    box-shadow: 0 0 10px 0 var(--Bright-blue);
+    margin: 15px 0 0 0;
+}
+.ancla {
+    margin: 14px 0 40px 0;
+}
+.ancla a {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+ @media (min-width: 670px){
+    .form {
+        width: 380px;
+    }
+    .ps {
+        margin: 0 15% 0 15%;
+    }
+ }
+ @media (max-width: 620px){
+    .ps {
+        margin: 0 5% 0 5%;
+    }
+    .button button {
+        width: 83%;
+    }
+ }
